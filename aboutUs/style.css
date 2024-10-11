@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    text-align: center;
+    padding: 1.25rem; /* 20px */
+    background-color: #333;
+    color: white;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem; /* 20px */
+}
+
+.team-member {
+    background-color: #1e1e1e; /* Darker background for team member cards */
+    border: 1px solid #333;
+    border-radius: 0.5rem; /* 8px */
+    margin: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+    width: 25rem; /* 400px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 0 4px 8px */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
+    object-fit: cover;
+}
+
+.team-member h2 {
+    font-size: 1.2rem;
+    margin: 0.625rem 0; /* 10px */
+    color: #ffffff; /* White text color for headings */
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light gray text color for descriptions */
+}
