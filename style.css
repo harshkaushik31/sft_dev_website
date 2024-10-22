@@ -1,13 +1,42 @@
-body{
-    /* background-image: url('image/download\ \(1\).jpeg'); */
-    background-color: #121212;
-    background-size: cover; 
-    background-position: center; 
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
 }
-nav{
+html{
+    scroll-behavior: smooth; 
+}
+
+/* .logo {
+    width: 50px; 
+    height: auto; 
+} */
+
+.search-bar {
+    width: 300px; /* Make the search bar wider */
+    height: 30px; /* Make the search bar shorter in height */
+    padding: 5px 10px; /* Add padding for better spacing */
+    border: white;
+    border-radius: 15px; /* Make the edges rounder */
+    font-size: 1rem;
+    background-color: #444; /* Dark background for the search bar */
+    color: white; /* Light text color */
+    margin-left: 169px; /* Space between search bar and other elements */
+    transition: background-color 0.3s; /* Smooth transition for focus effect */
+    margin-top: 10px;
+}
+.search-bar::placeholder {
+    color: #ccc; /* Lighter color for placeholder text */
+}
+
+.search-bar:focus {
+    background-color: #555; /* Slightly lighter background on focus */
+    outline: none; /* Remove default outline */
+}
+
+nav {
     background-color: transparent;
     color: white;
     text-align: center;
@@ -23,12 +52,13 @@ nav ul {
     text-decoration: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
     margin-right: 1rem;
 }
-.line{
+
+.line {
     width: 100%;
     height: 1px;
     background-color: white;
@@ -44,6 +74,7 @@ nav ul li a{
     display: none; /* Hide all cards initially */
     margin: 0 10px;
 }
+
 .image-card img {
     width: 84rem;
     height: 25rem;
@@ -55,8 +86,189 @@ nav ul li a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
+    color: lightblue;
+    font-size: 4rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    padding: 1.25rem; /* 20px */
+    background-color: #333;
+    color: white;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem; /* 20px */
+}
+
+.team-member {
+    background-color: #1e1e1e; /* Darker background for team member cards */
+    border: 1px solid #333;
+    border-radius: 0.5rem; /* 8px */
+    margin: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+    width: 25rem; /* 400px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 0 4px 8px */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
+    object-fit: cover;
+}
+
+.team-member h2 {
+    font-size: 1.2rem;
+    margin: 0.625rem 0; /* 10px */
+    color: #ffffff; /* White text color for headings */
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Light gray text color for descriptions */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+}
+
+footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .social-media li {
+    margin: 0 0.5rem;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.about {
+    padding: 1.25rem; /* 20px */
+    background-color: #1e1e1e; /* Darker background for about section */
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    margin: 1.25rem; /* 20px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 0 4px 8px */
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.places {
+    padding: 1.25rem; /* 20px */
+    background-color: #1e1e1e; /* Darker background for places section */
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    margin: 1.25rem; /* 20px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 0 4px 8px */
+}
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.place-card {
+    background-color: #333;
+    border-radius: 0.5rem; /* 8px */
+    margin: 0.625rem; /* 10px */
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.place-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.place-card:hover .place-card-inner {
+    transform: rotateY(180deg);
+}
+
+.place-card-front, .place-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem; /* 8px */
+}
+
+.place-card-front {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem; /* 8px */
+    border-top-right-radius: 0.5rem; /* 8px */
+}
+
+.place-card-front h3 {
+    margin: 0.5rem 0;
+}
+
+.place-card-back {
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transform: rotateY(180deg);
 }

@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tourism Website</title>
+    <link rel="stylesheet" href="responsive.css"> <!-- Include the responsive CSS file -->
+    <title>Travel Website</title>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <h1 class="logo">Tourism Website</h1>
+                <!-- <div class="logo">
+                    <img src="image/logo.png" alt="Logo">
+                </div> -->
+                <h1 class="logo">Travel Website</h1>
+                <input type="text" class="search-bar" placeholder="Search...">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -25,18 +30,215 @@
     <div class="image-card-container">
         <div class="image-card">
             <img src="image/image1.jpg" alt="Image 1">
-            <div class="image-text">Welcome to the website</div>
+            <div class="image-text">H4A Travels Co.</div>
         </div>
         <div class="image-card">
             <img src="image/image2.jpg" alt="Image 2">
-            <div class="image-text">Welcome to the website</div>
+            <div class="image-text">H4A Travels Co.</div>
         </div>
         <div class="image-card">
             <img src="image/image3.jpg" alt="Image 3">
-            <div class="image-text">Welcome to the website</div>
+            <div class="image-text">H4A Travels Co.</div>
         </div>
     </div>
+
+    <!-- Places Section -->
+    <section class="places" id="home">
+        <h2>Explore Our Top Destinations</h2>
+        <div class="places-container">
+            <div class="place-card" onclick="location.href='usa.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/usa.jpeg" alt="USA">
+                        <h3>USA</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Discover the diverse landscapes and vibrant cities of the USA.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='singapore.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/singapore.jpg" alt="Singapore">
+                        <h3>Singapore</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the modern architecture and rich culture of Singapore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='india.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/india.jpeg" alt="India">
+                        <h3>India</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Explore the historical landmarks and diverse culture of India.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='japan.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/japan.jpeg" alt="Japan">
+                        <h3>Japan</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Discover the blend of tradition and modernity in Japan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/austraila.jpg" alt="Australia">
+                        <h3>Australia</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning landscapes and unique wildlife of Australia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more place cards as needed -->
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/russia.jpg" alt="Australia">
+                        <h3>Russia</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning beauty of auroras in Russia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/norway.jpeg" alt="Australia">
+                        <h3>Norway</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning landscapes and unique wildlife of Norway.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/greece.jpeg" alt="Australia">
+                        <h3>Greece</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning landscapes and unique culture of Greece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/uae.jpeg" alt="Australia">
+                        <h3>UAE</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning adventures and unique building of UAE.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/egypt.jpeg" alt="Australia">
+                        <h3>Egypt</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the stunning Pyramids and Nile river of Egypt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/france.jpeg" alt="Australia">
+                        <h3>France</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the love in the air.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/italy.jpeg" alt="Australia">
+                        <h3>Italy</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Explore the mouthwatering cuisines and exceptional infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/germany.jpeg" alt="Australia">
+                        <h3>Germany</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the heart break of WW2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/spain.jpeg" alt="Australia">
+                        <h3>Spain</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Experience the high concentrated cocaine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="place-card" onclick="location.href='australia.html'">
+                <div class="place-card-inner">
+                    <div class="place-card-front">
+                        <img src="image/switzerland.jpeg" alt="Australia">
+                        <h3>Switzerland</h3>
+                    </div>
+                    <div class="place-card-back">
+                        <p>Where nature, adventure and tranquility meet.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     
+
+     <!-- About Section -->
+     <section class="about" id="about">
+        <h2>About Our Website</h2>
+        <p>Welcome to our tourism guide website. We are dedicated to providing you with the best travel information and tips to make your journey unforgettable. Our team of experts works tirelessly to bring you the latest and most accurate information about various destinations around the world.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam saepe quibusdam rem nesciunt aperiam neque ut iste eius, voluptatem laudantium consequatur nostrum beatae suscipit, quis ad optio accusantium atque. Nulla officiis deserunt deleniti dolor, quas a autem soluta laborum accusantium eius illo commodi est eaque tempore odio nihil quae minus nostrum. Ullam deserunt unde perferendis doloremque molestias ex hic, mollitia nam sit quod iure fuga repudiandae numquam neque magni molestiae tempora libero incidunt, a quis minus aperiam labore? Adipisci sit autem laboriosam eveniet debitis reiciendis tempore ullam voluptate optio, molestias eum modi quis animi. Mollitia eos explicabo sequi eum illo?</p>
+    </section>
+    
+    <footer>
+        <div class="container" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: harsh@tourismwebsite.com</p>
+            <p>Phone: +91 7880019760</p>
+            <p>Address: D-88, Saraswati Vihar, NTPC Township, Jamnipali, Korba, Chhattisgarh</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -48,3 +48,23 @@ header {
     font-size: 0.9rem;
     color: #b0b0b0; /* Light gray text color for descriptions */
 }
+
+.about {
+    padding: 1.25rem; /* 20px */
+    background-color: #1e1e1e; /* Darker background for about section */
+    color: #e0e0e0; /* Light text color */
+    text-align: center;
+    margin: 1.25rem; /* 20px */
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); /* 0 4px 8px */
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
