@@ -72,8 +72,10 @@ nav ul li a:hover {
 .welcome-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Adjust height as needed */
+    align-items: center;
     text-align: center;
+    background-color: #333; /* Dark background color */
+    padding: 20px;
 }
 
 .welcome-container h1 {
@@ -81,69 +83,55 @@ nav ul li a:hover {
     color: #e0e0e0; /* Light text color */
 }
 
-.carousel-container {
+.carousel-inner img {
+    width: 80%; /* Adjust the width as needed */
+    height: 30rem;
+    margin: 0 auto; /* Center the images */
+    border-radius: 8px;
+}
+
+.description-section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    margin-top: 20px;
+    align-items: center;
+    padding: 40px; /* Increase padding for more height */
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    min-height: 400px; /* Increase the minimum height */
 }
 
-.carousel {
+.description-container {
     display: flex;
-    overflow: hidden;
-    width: 80%;
-    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
 }
 
-.card {
-    flex: 0 0 20%;
-    margin: 0 10px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
+.description-image {
+    flex: 1;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.description-image img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 8px;
 }
 
-.caption {
-    margin-top: 10px;
+.description-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.description-text h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #e0e0e0; /* Light text color */
+}
+
+.description-text p {
+    margin-bottom: 10px;
     font-size: 1rem;
-    color: #ccc;
-}
-
-.carousel-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.carousel-button.prev {
-    left: 10px;
-}
-
-.carousel-button.next {
-    right: 10px;
-}
-
-.card.active {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-.card.inactive {
-    opacity: 0.5;
+    color: #ccc; /* Light text color */
+    line-height: 1.6;
 }
