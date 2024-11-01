@@ -98,6 +98,7 @@ nav ul li a:hover {
     background-color: #121212; /* Dark background color */
     color: #e0e0e0; /* Light text color */
     min-height: 400px; /* Increase the minimum height */
+    height: 100vh; /* Match the height of the timeline section */
 }
 
 .description-container {
@@ -134,4 +135,133 @@ nav ul li a:hover {
     font-size: 1rem;
     color: #ccc; /* Light text color */
     line-height: 1.6;
+}
+
+.timeline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    height: 100vh; /* Set height to 100vh */
+}
+
+.timeline-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.timeline-event {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-left: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.timeline-event.active {
+    display: flex;
+}
+
+.timeline-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-description h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #e0e0e0; /* Light text color */
+}
+
+.timeline-description p {
+    font-size: 1rem;
+    color: #ccc; /* Light text color */
+    line-height: 1.6;
+}
+
+.timeline-description img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the container */
+    aspect-ratio: 16/9; /* Maintain a landscape aspect ratio */
+}
+
+.timeline-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.timeline-button.prev {
+    margin-right: 20px;
+}
+
+.timeline-button.next {
+    margin-left: 20px;
+}
+
+.flights-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px; /* Increase padding for more height */
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    min-height: 600px; /* Increase the minimum height */
+}
+
+.flights-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#fetch-flights {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#flights-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flight-item {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
 }
