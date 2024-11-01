@@ -225,10 +225,10 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px; /* Increase padding for more height */
+    padding: 40px;
     background-color: #121212; /* Dark background color */
     color: #e0e0e0; /* Light text color */
-    min-height: 600px; /* Increase the minimum height */
+    height: 100vh; /* Match the height of the weather section */
 }
 
 .flights-container {
@@ -264,4 +264,44 @@ nav ul li a:hover {
     border-radius: 8px;
     width: 100%;
     max-width: 800px;
+}
+
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    height: 100vh; /* Match the height of the flights section */
+}
+
+.weather-section .row {
+    width: 100%; /* Ensure the row takes full width */
+    height: 100%; /* Ensure the row takes full height */
+    display: flex;
+}
+
+.weather-section .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the columns take full height */
+    flex: 1; /* Ensure the columns take equal width */
+}
+
+.weather-section .card {
+    background-color: #333; /* Dark card background color */
+    color: #e0e0e0; /* Light text color */
+    height: 100%; /* Ensure the cards take full height */
+    width: 100%; /* Ensure the cards take full width */
+}
+
+.weather-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the card body takes full height */
 }

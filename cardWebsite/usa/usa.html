@@ -101,6 +101,56 @@
                 <button class="timeline-button next">›</button>
             </div>
         </section>
+        <section class="weather-section">
+            <h2 class="my-4 text-center">Weather for <span id="cityName"></span></h2>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3" style="color: white; background-color: #222;">
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small class="text-muted fw-light"> °C</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"></span> °C</li>
+                                <li>Min Temperature is <span id="min_temp"></span> °C</li>
+                                <li>Max Temperature is <span id="max_temp"></span> °C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3" style="color: white; background-color: #222;">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind Degrees is <span id="wind_degrees"></span> °</li>
+                                <li>Cloud PCT is <span id="cloud_pct"></span> %</li>
+                                <li>Humidity is <span id="humidity"></span> %</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3" style="color: white; background-color: #222;">
+                            <h4 class="my-0 fw-normal">Wind Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small class="text-muted fw-light"> km/hr</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind Speed is <span id="wind_speed"></span> km/hr</li>
+                                <li>Sunrise Time is <span id="sunrise"></span></li>
+                                <li>Sunset Time is <span id="sunset"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="flights-section">
             <h2>Flights Information</h2>
             <div class="flights-container">
