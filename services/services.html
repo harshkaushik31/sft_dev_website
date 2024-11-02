@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Tourism Guide</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="image">
+                <img src="service-image.jpg" alt="Our Services">
+            </div>
+            <div class="text">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of travel services to make your trip unforgettable. From booking flights and hotels to arranging guided tours and transportation, we have got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service">
+            <h3>Service 1</h3>
+            <p>Description of Service 1.</p>
+        </div>
+        <div class="service">
+            <h3>Service 2</h3>
+            <p>Description of Service 2.</p>
+        </div>
+        <div class="service">
+            <h3>Service 3</h3>
+            <p>Description of Service 3.</p>
+        </div>
+    </section>
+
+    <!-- Want Our Services Section -->
+    <section class="want-services-section" id="want-services">
+        <h2>Want Our Services?</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="services">Do you want our services?</label>
+            <input type="text" id="services" name="services" required><br>
+
+            <label for="dates">Expected Dates for Travel:</label>
+            <input type="date" id="dates" name="dates" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="services.js"></script>
+</body>
+</html>
