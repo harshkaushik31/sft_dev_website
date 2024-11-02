@@ -59,55 +59,55 @@ fetchFlightsButton.addEventListener('click', () => {
 
 
 
-// const weatherApiKey = 'fdec9c501msh0ca2720615d60e9p19fafbjsnfdea9c55d7bd';
-// const weatherApiHost = 'weather-by-api-ninjas.p.rapidapi.com';
+const weatherApiKey = 'fdec9c501msh0ca2720615d60e9p19fafbjsnfdea9c55d7bd';
+const weatherApiHost = 'weather-by-api-ninjas.p.rapidapi.com';
 
-// const getWeather = (city) => {
-//     document.getElementById('cityName').innerHTML = city;
-//     fetch(`https://${weatherApiHost}/v1/weather?city=${city}`, {
-//         method: 'GET',
-//         headers: {
-//             'X-RapidAPI-Key': weatherApiKey,
-//             'X-RapidAPI-Host': weatherApiHost
-//         }
-//     })
-//         .then(response => response.json())
-//         .then((response) => {
-//             console.log(response);
-//             document.getElementById('cloud_pct').innerHTML = response.cloud_pct || 'undefined';
-//             document.getElementById('humidity').innerHTML = response.humidity || 'undefined';
-//             document.getElementById('humidity2').innerHTML = `${response.humidity || 'undefined'}<small class="text-muted fw-light"> %</small>`;
-//             document.getElementById('max_temp').innerHTML = response.max_temp || 'undefined';
-//             document.getElementById('min_temp').innerHTML = response.min_temp || 'undefined';
-//             document.getElementById('sunrise').innerHTML = response.sunrise ? new Date(response.sunrise * 1000).toLocaleTimeString() : 'undefined';
-//             document.getElementById('sunset').innerHTML = response.sunset ? new Date(response.sunset * 1000).toLocaleTimeString() : 'undefined';
-//             document.getElementById('temp').innerHTML = response.temp || 'undefined';
-//             document.getElementById('temp2').innerHTML = response.temp || 'undefined';
-//             document.getElementById('wind_degrees').innerHTML = response.wind_degrees || 'undefined';
-//             document.getElementById('wind_speed').innerHTML = response.wind_speed || 'undefined';
-//             document.getElementById('wind_speed2').innerHTML = response.wind_speed || 'undefined';
-//         })
-//         .catch(err => {
-//             console.error(err);
-//             document.getElementById('cloud_pct').innerHTML = 'undefined';
-//             document.getElementById('humidity').innerHTML = 'undefined';
-//             document.getElementById('humidity2').innerHTML = 'undefined';
-//             document.getElementById('max_temp').innerHTML = 'undefined';
-//             document.getElementById('min_temp').innerHTML = 'undefined';
-//             document.getElementById('sunrise').innerHTML = 'undefined';
-//             document.getElementById('sunset').innerHTML = 'undefined';
-//             document.getElementById('temp').innerHTML = 'undefined';
-//             document.getElementById('temp2').innerHTML = 'undefined';
-//             document.getElementById('wind_degrees').innerHTML = 'undefined';
-//             document.getElementById('wind_speed').innerHTML = 'undefined';
-//             document.getElementById('wind_speed2').innerHTML = 'undefined';
-//         });
-// };
+const getWeather = (city) => {
+    document.getElementById('cityName').innerHTML = city;
+    fetch(`https://${weatherApiHost}/v1/weather?city=${city}`, {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': weatherApiKey,
+            'X-RapidAPI-Host': weatherApiHost
+        }
+    })
+        .then(response => response.json())
+        .then((response) => {
+            console.log(response);
+            document.getElementById('cloud_pct').innerHTML = response.cloud_pct || 'undefined';
+            document.getElementById('humidity').innerHTML = response.humidity || 'undefined';
+            document.getElementById('humidity2').innerHTML = `${response.humidity || 'undefined'}<small class="text-muted fw-light"> %</small>`;
+            document.getElementById('max_temp').innerHTML = response.max_temp || 'undefined';
+            document.getElementById('min_temp').innerHTML = response.min_temp || 'undefined';
+            document.getElementById('sunrise').innerHTML = response.sunrise ? new Date(response.sunrise * 1000).toLocaleTimeString() : 'undefined';
+            document.getElementById('sunset').innerHTML = response.sunset ? new Date(response.sunset * 1000).toLocaleTimeString() : 'undefined';
+            document.getElementById('temp').innerHTML = response.temp || 'undefined';
+            document.getElementById('temp2').innerHTML = response.temp || 'undefined';
+            document.getElementById('wind_degrees').innerHTML = response.wind_degrees || 'undefined';
+            document.getElementById('wind_speed').innerHTML = response.wind_speed || 'undefined';
+            document.getElementById('wind_speed2').innerHTML = response.wind_speed || 'undefined';
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('cloud_pct').innerHTML = 'undefined';
+            document.getElementById('humidity').innerHTML = 'undefined';
+            document.getElementById('humidity2').innerHTML = 'undefined';
+            document.getElementById('max_temp').innerHTML = 'undefined';
+            document.getElementById('min_temp').innerHTML = 'undefined';
+            document.getElementById('sunrise').innerHTML = 'undefined';
+            document.getElementById('sunset').innerHTML = 'undefined';
+            document.getElementById('temp').innerHTML = 'undefined';
+            document.getElementById('temp2').innerHTML = 'undefined';
+            document.getElementById('wind_degrees').innerHTML = 'undefined';
+            document.getElementById('wind_speed').innerHTML = 'undefined';
+            document.getElementById('wind_speed2').innerHTML = 'undefined';
+        });
+};
 
-// document.getElementById('submit').addEventListener("click", (e) => {
-//     e.preventDefault();
-//     getWeather(document.getElementById('city').value);
-// });
+document.getElementById('submit').addEventListener("click", (e) => {
+    e.preventDefault();
+    getWeather(document.getElementById('city').value);
+});
 
-// getWeather("Delhi");
+getWeather("Delhi");
 
