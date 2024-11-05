@@ -28,12 +28,12 @@ html{
     margin-top: 10px;
 }
 .search-bar::placeholder {
-    color: #ccc; /* Lighter color for placeholder text */
+    color: #ccc; 
 }
 
 .search-bar:focus {
-    background-color: #555; /* Slightly lighter background on focus */
-    outline: none; /* Remove default outline */
+    background-color: #555;
+    outline: none; 
 }
 
 nav {
@@ -198,13 +198,13 @@ footer-content {
 
 .about-content {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .about-text {
     flex: 1;
-    padding-right: 1.25rem; /* 20px */
+    padding-right: 1.25rem;
 }
 
 .about-image {
@@ -253,8 +253,8 @@ footer-content {
 
 .place-card {
     background-color: #333;
-    border-radius: 0.5rem; /* 8px */
-    margin: 0.625rem; /* 10px */
+    border-radius: 0.5rem; 
+    margin: 0.625rem; 
     width: 200px;
     height: 300px;
     perspective: 1000px;
@@ -279,7 +279,7 @@ footer-content {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 0.5rem; /* 8px */
+    border-radius: 0.5rem; 
 }
 
 .place-card-front {
