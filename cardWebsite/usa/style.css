@@ -222,6 +222,33 @@ nav ul li a:hover {
 }
 
 
+/* Style for the search bar */
+.weather-section .search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather-section #city {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.weather-section #submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
+}
+
+.weather-section #submit:hover {
+  background-color: #434343;
+}
+
 /* Time line section*/
 /**************Animation File Start Here (animate.css)****************/
 /**************Copy and Save this in another file (animate.css)****************/
