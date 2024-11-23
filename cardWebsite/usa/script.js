@@ -85,6 +85,7 @@ fetchFlightsButton.addEventListener('click', () => {
 
 const weatherApiKey = 'd50b30d05f577a4088924953778fdf6f';
 const weatherApiHost = 'api.openweathermap.org/data/2.5';
+const weatherApiKey2 = '73469646ca382230f7803948961ded39';
 
 const getWeather = (city) => {
     document.getElementById('cityName').innerHTML = city;
@@ -122,9 +123,12 @@ const getWeather = (city) => {
         });
 };
 
+
+
 document.getElementById('submit').addEventListener("click", (e) => {
     e.preventDefault();
-    getWeather(document.getElementById('city').value);
+    const city = document.getElementById('city').value;
+    getWeather(city);
 });
 
 getWeather("New York");
