@@ -49,4 +49,125 @@
         width: 90%;
         margin: 10px auto;
     }
+
+    .welcome-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description-text {
+        width: 90%;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .timeline-panel {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-badge {
+        display: none;
+    }
+
+    .weather-section, .flights-section {
+        padding: 20px;
+    }
+
+    .weather-section h2, .flights-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container input, .search-container button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .description-text {
+        width: 80%;
+    }
+
+    .timeline-panel {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-badge {
+        display: none;
+    }
+
+    .weather-section, .flights-section {
+        padding: 20px;
+    }
+
+    .weather-section h2, .flights-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container input, .search-container button {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
