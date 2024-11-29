@@ -299,6 +299,11 @@ footer-content {
     border-top-right-radius: 0.5rem; /* 8px */
 }
 
+#footer-image{
+    height: 20px;
+    width: 20px;
+}
+
 .place-card-front h3 {
     margin: 0.5rem 0;
 }
