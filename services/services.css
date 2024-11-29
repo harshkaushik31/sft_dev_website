@@ -1,5 +1,5 @@
 body {
-    background: url('path/to/your/dark-background-image.jpg') no-repeat center center fixed;
+    background-color: #121212;
     background-size: cover;
     color: #ffffff;
     font-family: Arial, sans-serif;
@@ -79,15 +79,12 @@ nav .search-bar:focus {
     flex-direction: column; /* Ensure services are vertically aligned */
 }
 
-.services-section .image {
-    flex: 1;
-    padding-right: 20px;
+#servies-details{
+    margin-left: 120px;
+    margin-right: 120px;
 }
-
-.services-section .image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.service{
+    font-size: 20px;
 }
 
 .services-section .text {

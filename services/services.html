@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,38 +11,40 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="/index.html">Contact</a></li>
+            <li><a href="/aboutUs/index.html">About</a></li>
         </ul>
     </nav>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <!-- <section class="services-section">
         <div class="container">
-            <div class="image">
-                <img src="service-image.jpg" alt="Our Services">
-            </div>
+            
             <div class="text">
                 <h2>Our Services</h2>
                 <p>We offer a wide range of travel services to make your trip unforgettable. From booking flights and hotels to arranging guided tours and transportation, we have got you covered.</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="services-section">
-        <div class="service">
-            <h3>Service 1</h3>
-            <p>Description of Service 1.</p>
+    <section class="services-section" id="servies-details">
+        <div class="service" id="guided-tours">
+            <h3>Guided Tours</h3>
+            <p>Explore your destination with our expert-guided tours. Our knowledgeable guides will take you to the most iconic landmarks and hidden gems, providing you with in-depth knowledge and unique experiences that you won't find anywhere else.</p>
         </div>
-        <div class="service">
-            <h3>Service 2</h3>
-            <p>Description of Service 2.</p>
+        <div class="service" id="transportation-arrangements">
+            <h3>Transportation Arrangements</h3>
+            <p>We arrange reliable transportation options, including car rentals, airport transfers, and local transportation, to make your travel smooth and stress-free. Our services ensure you have convenient and comfortable travel throughout your trip.</p>
         </div>
-        <div class="service">
-            <h3>Service 3</h3>
-            <p>Description of Service 3.</p>
+        <div class="service" id="travel-insurance">
+            <h3>Travel Insurance</h3>
+            <p>Protect your trip with our comprehensive travel insurance plans. Our insurance covers medical emergencies, trip cancellations, lost luggage, and more, giving you peace of mind while you travel. We offer various plans to suit different needs and budgets, ensuring that you are covered no matter where you go. Our travel insurance also includes 24/7 emergency assistance, so you can get help whenever you need it. Whether you're traveling domestically or internationally, our travel insurance provides the protection you need to enjoy your trip worry-free.</p>
+        </div>
+        <div class="service" id="custom-itineraries">
+            <h3>Custom Itineraries</h3>
+            <p>Our travel experts can create personalized itineraries tailored to your interests and preferences. Whether you are looking for adventure, relaxation, or cultural experiences, we will design a trip that meets your needs and exceeds your expectations.</p>
         </div>
     </section>
 
@@ -68,17 +71,7 @@
         </form>
     </section>
 
-    <section class="form-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+    
 
     <script src="services.js"></script>
 </body>
